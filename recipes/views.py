@@ -3,10 +3,6 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'recipes/home.html')
+    return render(request, 'recipes/pages/home.html')
 
-def contato(request):
-    return HttpResponse('contato 1')
 
-def sobre(request):
-    return HttpResponse('sobre 1')
