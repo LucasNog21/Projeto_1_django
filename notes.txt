@@ -1,0 +1,56 @@
+1- Criar ambiente virtual:
+    python -m venv venv
+    
+    1- Ativar ambiente virtual:
+        venv/Scripts/Activate
+
+2- Instalar Django
+    pip install Django
+
+3- Criar projeto
+    django-admin startproject nome_do_projeto
+
+4- Criar app
+    python manage.py startapp nome_do_app
+
+    1- Adicionar app
+        Entrar em projeto/settings.py e adicionar o nome do projeto em Installed_apps
+
+    
+5- Rodar servidor
+    python manage.py runserver
+    1- Debug runserver automático
+        Criar launch-json com o runserver automático
+
+6- Projeto/Urls
+    from django.urls import include, path
+    include urls do app
+
+7- App/urls
+    import funções de views
+    Adicionar os caminhos de e funções: path(caminho, função)
+
+8- views
+    Função render para executar os templates em cada url
+
+9- templates
+    Local onde fica armazenado os templates(html) de cada url
+    Adicionar templates não padrões na aba DIRS do projeto/settings: BASE_DIR / 'nome_da_pasta'
+    Para evitar colisão de nomes colocar os templates dentro de outra pasta e referir os arquivos dentro das pastas indicadas - namespacing
+
+    1-exibição de variáveis no django
+        {{alguma coisa}}
+    2- Icones
+        font-awesome: Ótima ferramenta para icons. Basta incluir a tag dos icons e chamar a tag do site
+    3- Conversão rem pixel:
+    html {
+            font-size: 62.5%%;
+
+        }
+        body {
+            font-size: 1.6rem;
+        }
+    4- Adicionando templates em novas pastas:
+        Sempre lembrar de atualizar o caminho nos views
+
+    
