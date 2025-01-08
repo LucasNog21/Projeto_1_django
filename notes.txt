@@ -64,7 +64,17 @@
         
     2- Configurar no project em settings
         -{% load static%} no django.html necessário
-            -
+    
+    3-Configurar novos caminhos static:
+        STATICFILES_DIRS = [
+            BASEDIR / 'caminho'
+        ]
+
+
+    4- Coletar arquivos estáticos 
+        python manage.py collectstatic
+            criar STATIC_ROOT no settings com o caminho
+                (IMPORTANCIA de fazer namespacing para nao colidir nome entre eles )
 
 
     
