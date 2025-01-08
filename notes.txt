@@ -53,4 +53,18 @@
     4- Adicionando templates em novas pastas:
         Sempre lembrar de atualizar o caminho nos views
 
+    5- Adicionar partials em sua determinada pasta e fazer o {%include "caminho"%} nas pages
+
+    6- Ao lidar com arquivos estáticos, por convenção e utilização do framework:
+    1- Criar arquivos
+        -criar pasta static
+            -criar pasta com o nome do app
+                -criar pasta css (por exemplo)
+    
+        
+    2- Configurar no project em settings
+        -{% load static%} no django.html necessário
+            -
+
+
     

@@ -1,8 +1,9 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'recipes/pages/home.html')
+    return render(request, 'recipes/pages/home.html', context={'name':'Lucas'})
 
+def recipe(request, id):
+    return render(request, 'recipes/pages/home.html', context={'name':'Lucas'})
 
