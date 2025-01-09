@@ -76,5 +76,12 @@
             criar STATIC_ROOT no settings com o caminho
                 (IMPORTANCIA de fazer namespacing para nao colidir nome entre eles )
 
+    5- Herança templates
+        {%block nome%} {%endblock nome} no template BASE_DIR
+            {extends 'caminho/do/template/baseado/no/settings' } no arquivo diferente e englobar o block
+
+
+    6- mock dados com dicionarios e Faker, passando a função no views.
+
 
     
