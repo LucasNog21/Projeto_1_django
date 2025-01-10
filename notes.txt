@@ -84,4 +84,13 @@
     6- mock dados com dicionarios e Faker, passando a função no views.
 
 
+10- models
+    1- uma model cria uma tabela na base de dados
+
+    2- python manage.py migrate --> para fazer a migração das models para a base de dados
+    
+    3- python manage.py makemigrations --> para enviar os models para a pasta migrations
+
+
+
     
