@@ -91,6 +91,15 @@
     
     3- python manage.py makemigrations --> para enviar os models para a pasta migrations
 
+    4-Adicionar models na aba admin para aparecer no djangoadmin do projeto
+
+    5-Mudar função __str__ para melhorar a usabilidade do Django admin
+
+
+11- Django admin
+    1- criar usuário python manage.py createsuperuser
+
+
 
 
     
