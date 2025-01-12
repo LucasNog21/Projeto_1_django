@@ -95,10 +95,28 @@
 
     5-Mudar função __str__ para melhorar a usabilidade do Django admin
 
+    6- python manage.py shell para criar um shell python
+        1- importar os models: ex: from recipes.models import Recipe, Category
+        2- fazer a query de todos os exemplos de um model ex: x = Category.objects.all()
+            1-x.order_by para ordenar
+
+
+    7- Category.objects.create() não é lazy, porem new_category = Category() é lazy mode
+
+    8-Métodos interessantes python shell django
+    .save()
+    .create()
+    .delete()
+    .filter(attribute<=(por exemplo))
+    .get(attribute=)
+    .first()
 
 11- Django admin
     1- criar usuário python manage.py createsuperuser
 
+
+12- media
+    1- urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) para o django ter as patterns de onde estão as medias no projeto Local
 
 
 
