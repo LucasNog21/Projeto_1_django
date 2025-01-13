@@ -64,9 +64,13 @@
     </footer>
     {% endif %}
 
-    {% if is_detail_page %}
+    {% if is_detail_page is True %}
         <div class="preparation-steps">
-            {{recipe.preparation_step|linebreaks}}
-        </div>
+            {% if recipe.preparation_step_is_html is True %}
+                {{ recipe.preparation_step|safe }}
+            {% else %}
+                    {{ recipe.preparation_step|linebreaksbr }}
+                </div>
+            {% endif %}
     {% endif %}
 </div>
