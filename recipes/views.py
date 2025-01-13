@@ -18,9 +18,10 @@ def category(request, category_id):
         })
 
 
-def recipe(request, id):
+def recipe(request, recipe_id):
+    recipe = Recipe.objects.get(id=recipe_id)
     return render(request, 'recipes/pages/recipe-view.html', context={
-        'recipe': make_recipe(),
+        'recipe': recipe,
         'is_detail_page': True,
     })
 
