@@ -114,6 +114,12 @@
 11- Django admin
     1- criar usuário python manage.py createsuperuser
 
+    2- Criar usuário padrao via shell
+        from django.contrib.auth.models import User
+        User.objects.create_user()
+
+        User.objects.create_user(first_name='Fulano', last_name='Marciano', username='Fulano', email='fulano@gmail.com', password='123456') 
+        <User: Fulano>
 
 12- media
     1- urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) para o django ter as patterns de onde estão as medias no projeto Local
