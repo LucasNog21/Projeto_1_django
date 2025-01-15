@@ -138,6 +138,9 @@
 
     5- Debugar para saber o resolve, por exemplo
 
+    6- Testar via terminal: pytest -k 'nome_do_teste'
+    
+
 
 
     
