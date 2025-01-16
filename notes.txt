@@ -140,7 +140,15 @@
 
     6- Testar via terminal: pytest -k 'nome_do_teste'
     
+    7- Não é prudente usar fixtures(dar suporte aos testes)
 
+    8- setUp para executar antes da função e tearDown depois:
+    def setUp(self):
+        return super().setUp()
+    
+    def tearDown(self):
+        return super().tearDown()
+    9
 
 
     
