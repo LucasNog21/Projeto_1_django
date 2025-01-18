@@ -152,7 +152,16 @@
 
     9- Considerar o TDD (test driven ...)
 
-    
+    10-models
+        1-Testar principalmente os campos que tiverem valor máximo
+            -O tamanho dos fields não são testados automaticamente pelo django. O próprio  desenvoldedor deve fazer esses testes
+
+        2-Parametrização:
+            pip install parameterized
+
+        3-Ativando coverage:
+            coverage run --omit='*/venv/*' -m pytest
+            coverage run -m pytest (após configurar no arquivo)
 
 
     
