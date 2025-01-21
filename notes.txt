@@ -162,6 +162,8 @@
         3-Ativando coverage:
             coverage run --omit='*/venv/*' -m pytest
             coverage run -m pytest (após configurar no arquivo)
+        
+        4- Enumerar for para mudar slugfield igual
 
 
     

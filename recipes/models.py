@@ -13,7 +13,7 @@ class Category(models.Model):
 class Recipe(models.Model):
     title = models.CharField(max_length=65) #VARCHAR
     description = models.CharField(max_length=165)
-    slug = models.SlugField() #slug
+    slug = models.SlugField(unique=True) #slug
     preparation_time = models.IntegerField() #INT
     preparation_time_unit = models.CharField(max_length=65)
     servings = models.IntegerField()
