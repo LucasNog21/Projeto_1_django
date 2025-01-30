@@ -166,4 +166,10 @@
         4- Enumerar for para mudar slugfield igual
 
 
+14- Search
+    Buscar com as expressoes regulares na base de dados
+
+15-
+    Paginator
+
     
