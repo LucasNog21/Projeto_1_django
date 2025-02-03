@@ -46,11 +46,12 @@ def search(request):
         ),
         is_published=True
     ).order_by('-id')
-    
+
     page_obj, pagination_range = make_pagination(request,recipes, 9)
     return render(request, 'recipes/pages/search.html', {
         'page_title': f'Search for "{search_term}" |',
         'search_term': search_term,
         'recipes': page_obj,
         'pagination_range' : pagination_range,
+        'additional_url_query' : f'&q={search_term}'
     })
