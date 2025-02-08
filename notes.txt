@@ -172,4 +172,10 @@
 15-
     Paginator
 
+16- python-dotenv
+    pip install pythonn-dotenv
+        importar o load_dotenv e carregar ele no manage.py, asgi e wsgi e talvez nos testes.
+        arquivo .env:
+            os.environ.get('SECRET_KEY', 'INSECURE') com o nome da variavel em primeiro e o caso de erro na segunda
+
     
