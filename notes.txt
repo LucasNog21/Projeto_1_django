@@ -178,4 +178,10 @@
         arquivo .env:
             os.environ.get('SECRET_KEY', 'INSECURE') com o nome da variavel em primeiro e o caso de erro na segunda
 
+17- flash messages
+    configurar as MESSAGES_TAGS = {
+
+    } no settings e utilizar na view.
+    -ajustar o css e html
+
     
