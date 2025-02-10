@@ -184,4 +184,17 @@
     } no settings e utilizar na view.
     -ajustar o css e html
 
+18-
+    forms: criar a view dos forms,url,  criar o template, 
+    criar o arquivo forms com a classe dos forms 
+    POST:
+        Criar o formulario do method POST
+            fazer a verificação do post na view.
+
+    redirect:
+        Utilizar o redirect com a session para fazer o get numa outra url e voltar pro register
+        
+
+
+
     
