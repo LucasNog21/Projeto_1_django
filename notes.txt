@@ -202,7 +202,10 @@
         Utilizar o redirect com a session para fazer o get numa outra url e voltar pro register
 
     widgets: Também é possível colocar a classe e placeholders na classe
-        
+    
+
+    clean:
+        é possivel fazer o clean de um campo ou de vários campos e também exibir varios erros em uma lista
 
     
 
